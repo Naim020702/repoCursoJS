@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- nav+h1+p hermanos -->
+    <nav></nav>
+    <h1></h1>
+    <p></p>
+
+    <!-- nav>h1+h3+p padre con hijos hermanos -->
+    <nav>
+        <h1></h1>
+        <h3></h3>
+        <p></p>
+    </nav>
+
+    <nav>
+        <ul>
+            <li></li>
+        </ul>
+    </nav>
+
+    <!-- nav>ul>li*3 -->
+    <nav>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </nav>
+
+    <!-- nav>ul>li.claseX*3 -->
+    <nav>
+        <ul>
+            <li class="claseX"></li>
+            <li class="claseX"></li>
+            <li class="claseX"></li>
+        </ul>
+    </nav>
+
+    <!-- nav>ul>li.btn.btn-primary.lista -->
+    <nav>
+        <ul>
+            <li class="btn btn-primary lista"></li>
+        </ul>
+    </nav>
+
+    <!-- nav>ul>li.btn.btn-primary#item -->
+    <nav>
+        <ul>
+            <li class="btn btn-primary" id="item"></li>
+            <li class="btn btn-primary" id="item"></li>
+            <li class="btn btn-primary" id="item"></li>
+        </ul>
+    </nav>
+
+    <!-- nav>ul>li.btn.btn-primary#item$$*5 -->
+    <nav>
+        <ul>
+            <li class="btn btn-primary" id="item01"></li>
+            <li class="btn btn-primary" id="item02"></li>
+            <li class="btn btn-primary" id="item03"></li>
+        </ul>
+    </nav>
+
+    <!-- nav>ul>li#item$$$*3{lista} -->
+    <nav>
+        <ul>
+            <li id="item001">lista</li>
+            <li id="item002">lista</li>
+            <li id="item003">lista</li>
+        </ul>
+    </nav>
+
+    <!-- p>strong+span+em -->
+    <p><strong></strong><span></span><em></em></p>
+
+    <!-- header>div.container>h1{Titulo Principal}+p>strong -->
+    <header>
+        <div class="container">
+            <h1>Titulo Principal</h1>
+            <p><strong></strong></p>
+        </div>
+    </header>
+
+    <!-- header>div.container#principal>h1{Titulo}+p>strong+span^ul>li.lista#item$$*3 -->
+    <header>
+        <div class="container" id="principal">
+            <h1>Titulo</h1>
+            <p><strong></strong><span></span></p>
+            <ul>
+                <li class="lista" id="item01"></li>
+                <li class="lista" id="item02"></li>
+                <li class="lista" id="item03"></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- div.container>(header>h1{Titulo}+p>strong)+(nav.nav>ul>li.lista#item$$*3{item})+(footer.footer>p>strong+span) -->
+    <div class="container">
+        <header>
+            <h1>Titulo</h1>
+            <p><strong></strong></p>
+        </header>
+
+        <nav class="nav">
+            <ul>
+                <li class="lista" id="item01">item</li>
+                <li class="lista" id="item02">item</li>
+                <li class="lista" id="item03">item</li>
+            </ul>
+        </nav>
+        
+        <footer class="footer">
+            <p><strong></strong><span></span></p>
+        </footer>
+    </div>
+
+</body>
+</html>
