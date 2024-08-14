@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="title" id="title">Metodos para trabajar con clases</h1>
+    <h2>classList</h2>
+    <section id="section">
+        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi saepe, maxime rem molestiae dignissimos ratione delectus quae cumque tempore cupiditate earum modi quo, aliquam odio excepturi! Cumque fuga alias expedita?</p>
+    </section>
+
+    <script>
+        const h1 = document.querySelector("#title");
+
+        const bool = h1.classList.contains("title");
+        console.log(bool);
+
+        h1.classList.add("especial", "xxx");
+
+        h1.classList.remove("title", "xxx");
+
+        h1.classList.toggle("title");
+
+        h1.classList.replace("especial", "xxx");
+    </script>
+</body>
+</html>

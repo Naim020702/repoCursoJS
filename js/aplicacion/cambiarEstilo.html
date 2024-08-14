@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambia Estilos</title>
+</head>
+<body>
+    <h1 id="title">Titulo</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At minima provident porro ratione obcaecati. Fuga praesentium assumenda aspernatur libero tempore voluptates culpa, nobis porro dignissimos iste eos labore, nostrum velit.</p>
+    <button id="btn">Mostrar Cambios</button>
+    <img src="https://images.pexels.com/photos/4110101/pexels-photo-4110101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="flores" id="img">
+
+    <script>
+        // const img = document.querySelector("#img");
+        // img.width = "400";
+        
+
+        const boton = document.querySelector("#btn");
+        boton.addEventListener("click", aplicarCambios);
+
+        function aplicarCambios(){
+            // document.querySelector("#img").style.width = "400px";
+            document.querySelector("#img").className = "imagen";
+            document.querySelector("#title").className = "titulo";
+            document.querySelector("#title").style.color = "red";
+            document.querySelector("#title").style.border = "dotted blue 13px";
+            document.querySelector("#title").style.padding = "13px";
+            document.querySelector("#title").style.background = "yellow";
+        }
+
+        const img = document.querySelector("#img");
+        console.log(img.getAttribute("alt"));
+        img.setAttribute("width", "400px");
+        img.setAttribute("height", "300px");
+    </script>
+</body>
+</html>

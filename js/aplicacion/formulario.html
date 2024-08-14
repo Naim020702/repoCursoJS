@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario HTML</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="" id="formulario">
+        nombre: <input type="text" name="nombre" id=""><br>
+        apellido: <input type="text" name="apellido" id=""><br>
+    </form>
+    <!-- <button onclick="alert('Alerta')">Mostrar Datos</button> -->
+    <!-- <button onclick="mostrarDatos()">Mostrar Datos</button> -->
+    <button id="btn">Mostrar Datos</button>
+
+    <div id="resultado"></div>
+
+    <script>
+        function mostrarDatos(){
+            const form = document.forms["formulario"];
+            // console.log(form);
+            const datos = [];
+            for (let elemento of form) {
+                // console.dir(elemento);
+                datos.push(elemento.value);
+            }
+            console.log(datos);
+            const divResultado = document.querySelector("#resultado");
+            divResultado.textContent = datos;
+        }
+
+        const btn = document.querySelector("#btn");
+        btn.addEventListener("click", mostrarDatos);
+        // btn.addEventListener("click", function(){
+
+        // });
+        // btn.addEventListener("click", () => {
+
+        // });
+    </script>
+</body>
+</html>
