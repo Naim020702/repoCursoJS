@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Eventos</h1>
+    <p>Un evento es cualquier cosa que sucede en nuestro documento</p>
+    <ul>
+        <li>El documento ha cargado</li>
+        <li>El usuario presiono una tecla</li>
+        <li>El usuario movio el raton</li>
+        <li>La ventana cambio de tamaño</li>
+        <li>El usuario hizo un click</li>
+        <li>El usuario paso el puntero del mouse sobre...</li>
+        <li>El usuario cerro la ventana</li>
+    </ul>
+
+    <button id="btn">Hacer algo</button>
+    
+    <script>
+        const btn = document.querySelector("#btn");
+        btn.addEventListener("click", () => {
+            console.log("tocas el btn");
+        });
+
+        const p = document.querySelector("p");
+        p.addEventListener("click", () => {
+            console.log("tocaste el parrafo");
+        });
+
+        
+    </script>
+</body>
+</html>
